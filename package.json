@@ -1,0 +1,25 @@
+{
+  "name": "portfolio-web",
+  "version": "1.0.0",
+  "description": "Music Portfolio Website",
+  "scripts": {
+    "dev": "vite",
+    "dev:5173": "vite --port 5173",
+    "dev:host": "vite --host 0.0.0.0 --port 5173",
+    "build": "vite build",
+    "preview": "vite preview",
+    "preview:4173": "vite preview --port 4173",
+    "preview:host": "vite preview --host 0.0.0.0 --port 4173"
+  },
+  "dependencies": {
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0",
+    "axios": "^1.6.7",
+    "lucide-vue-next": "^0.264.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "vite": "^5.1.0",
+    "sass": "^1.70.0"
+  }
+}
