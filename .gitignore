@@ -4,6 +4,12 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+### Node.js ###
+node_modules/
+.env
+.DS_Store
+dist/
+
 ### STS ###
 .apt_generated
 .classpath

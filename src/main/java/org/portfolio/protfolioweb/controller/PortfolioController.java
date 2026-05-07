@@ -5,9 +5,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.portfolio.protfolioweb.service.EmailService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -17,9 +14,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api")
 public class PortfolioController {
-
-    @Autowired
-    private EmailService emailService;
 
     @GetMapping("/albums")
     public List<Map<String, Object>> getAlbums() {
@@ -62,22 +56,6 @@ public class PortfolioController {
         response.put("success", true);
         response.put("message", "Message received! I'll get back to you soon.");
         return response;
-    }
-
-    @PostMapping("/send-email")
-    public ResponseEntity<Map<String, Object>> sendEmail(@RequestBody Map<String, String> payload) {
-        Map<String, Object> response = new HashMap<>();
-        try {
-            emailService.sendContactEmail(payload);
-            response.put("success", true);
-            response.put("message", "Message sent successfully!");
-            return ResponseEntity.ok(response);
-        } catch (Exception e) {
-            e.printStackTrace();
-            response.put("success", false);
-            response.put("message", "Failed to send message: " + e.getMessage());
-            return ResponseEntity.internalServerError().body(response);
-        }
     }
 
     @GetMapping("/about")
