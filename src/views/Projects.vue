@@ -83,42 +83,42 @@ const projects = [
   {
     title: 'Berklee College Commencement',
     description: 'Composed and performed the graduation ceremony music for the Class of 2024.',
-    image: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=college%20graduation%20ceremony%20music%20performance%20stage&image_size=landscape_4_3',
+    image: '/images/gallery/19A2578.jpg',
     category: 'Live Performances',
     date: 'May 2024'
   },
   {
     title: 'Film Score: "Silent Melodies"',
     description: 'Created original soundtrack for the independent film exploring musical expression.',
-    image: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=film%20score%20recording%20studio%20orchestra%20composing&image_size=landscape_4_3',
+    image: '/images/gallery/B19A2552.jpg',
     category: 'Compositions',
     date: 'April 2024'
   },
   {
     title: 'Jazz Fusion Album',
     description: 'Produced and engineered a jazz fusion album featuring international artists.',
-    image: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=jazz%20music%20recording%20session%20musicians%20brass&image_size=landscape_4_3',
+    image: '/images/albums/EP-Cover.png',
     category: 'Music Production',
     date: 'March 2024'
   },
   {
     title: 'Virtual Reality Experience',
     description: 'Created immersive audio experience for a VR music exhibition at MoMA.',
-    image: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=virtual%20reality%20music%20experience%20futuristic%20headset&image_size=landscape_4_3',
+    image: '/images/gallery/19A2578.jpg',
     category: 'Audio Engineering',
     date: 'February 2024'
   },
   {
     title: 'Boston Symphony Collaboration',
     description: 'Guest performer with the Boston Symphony Orchestra for their spring concert series.',
-    image: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=symphony%20orchestra%20concert%20hall%20performance&image_size=landscape_4_3',
+    image: '/images/gallery/B19A2552.jpg',
     category: 'Live Performances',
     date: 'January 2024'
   },
   {
     title: 'Electronic Music EP',
     description: 'Produced an experimental electronic music EP blending classical elements with modern beats.',
-    image: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=electronic%20music%20production%20synthesizers%20modern&image_size=landscape_4_3',
+    image: '/images/albums/EP-Cover.png',
     category: 'Music Production',
     date: 'December 2023'
   }
@@ -132,10 +132,10 @@ const events = [
 ]
 
 const collaborations = [
-  { name: 'John Smith', role: 'Pianist', image: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=professional%20pianist%20portrait%20elegant&image_size=square' },
-  { name: 'Sarah Johnson', role: 'Vocalist', image: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=professional%20vocalist%20portrait%20performer&image_size=square' },
-  { name: 'Mike Davis', role: 'Producer', image: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=music%20producer%20studio%20professional&image_size=square' },
-  { name: 'Boston Symphony', role: 'Orchestra', image: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=symphony%20orchestra%20logo%20elegant%20design&image_size=square' }
+  { name: 'John Smith', role: 'Pianist', image: '/images/profiles/头像.jpg' },
+  { name: 'Sarah Johnson', role: 'Vocalist', image: '/images/profiles/头像.jpg' },
+  { name: 'Mike Davis', role: 'Producer', image: '/images/profiles/头像.jpg' },
+  { name: 'Boston Symphony', role: 'Orchestra', image: '/images/gallery/B19A2552.jpg' }
 ]
 
 const filteredProjects = computed(() => {

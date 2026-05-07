@@ -96,7 +96,7 @@ const albums = [
   {
     title: 'Dreams Collection',
     year: '2017',
-    cover: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=music%20album%20cover%20abstract%20dreamy%20purple%20blue%20colors&image_size=square',
+    cover: '/images/albums/EP-Cover.png',
     description: 'A collection of dreamy melodies and ambient soundscapes that transport listeners to another dimension.',
     tracks: [
       { title: 'Midnight Dreams', duration: '5:42' },
@@ -110,7 +110,7 @@ const albums = [
   {
     title: 'Classical Fusion',
     year: '2019',
-    cover: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=classical%20music%20album%20cover%20elegant%20piano%20orchestra&image_size=square',
+    cover: '/images/gallery/19A2578.jpg',
     description: 'Blending classical compositions with modern electronic elements for a unique listening experience.',
     tracks: [
       { title: 'Serenade in Blue', duration: '6:45' },
@@ -123,7 +123,7 @@ const albums = [
   {
     title: 'Live at Berklee',
     year: '2022',
-    cover: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=live%20concert%20album%20cover%20stage%20lights%20performance&image_size=square',
+    cover: '/images/gallery/B19A2552.jpg',
     description: 'Recorded live at Berklee College of Music during my homecoming concert.',
     tracks: [
       { title: 'Intro', duration: '2:15' },
@@ -136,9 +136,9 @@ const albums = [
 ]
 
 const singles = [
-  { title: 'New Horizons', cover: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=music%20single%20cover%20futuristic%20neon%20colors&image_size=square', release: '2024' },
-  { title: 'Summer Vibes', cover: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=music%20single%20cover%20summer%20sunset%20beach&image_size=square', release: '2024' },
-  { title: 'Winter Nights', cover: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=music%20single%20cover%20winter%20night%20snow%20cozy&image_size=square', release: '2023' }
+  { title: 'New Horizons', cover: '/images/albums/EP-Cover.png', release: '2024' },
+  { title: 'Summer Vibes', cover: '/images/gallery/B19A2552.jpg', release: '2024' },
+  { title: 'Winter Nights', cover: '/images/gallery/19A2578.jpg', release: '2023' }
 ]
 
 const streamingPlatforms = [

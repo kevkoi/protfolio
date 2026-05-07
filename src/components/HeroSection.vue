@@ -24,7 +24,7 @@
       
       <div class="hero-visual animate-fade-in-up" style="animation-delay: 0.3s;">
         <div class="artist-image">
-          <img src="https://cdn.jsdelivr.net/gh/kevkoi/portfolio-assets@v1.0/images/profiles/头像.jpg" alt="Amy Ren" />
+          <img src="/images/profiles/头像.jpg" alt="Amy Ren" />
         </div>
       </div>
     </div>
@@ -62,7 +62,7 @@ const scrollToContact = () => {
   position: relative;
   overflow: hidden;
   padding: 6rem 2rem 2rem;
-  background: linear-gradient(180deg, #1a1512 0%, #2d2520 100%);
+  background: transparent;
 }
 
 .hero::before {
@@ -72,7 +72,7 @@ const scrollToContact = () => {
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(ellipse at center, rgba(201, 169, 98, 0.15) 0%, transparent 70%);
+  background: radial-gradient(ellipse at center, rgba(155, 138, 165, 0.12) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -92,7 +92,7 @@ const scrollToContact = () => {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  color: #c9a962;
+  color: #9b8aa5;
   font-size: 1.1rem;
   font-weight: 500;
   margin-bottom: 1rem;
@@ -115,14 +115,14 @@ const scrollToContact = () => {
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #c9a962, #e8d5b7);
+  background: linear-gradient(135deg, #9b8aa5, #6b7b8c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .hero-description {
-  color: rgba(197, 184, 168, 0.7);
+  color: rgba(138, 138, 143, 0.7);
   font-size: 1.1rem;
   line-height: 1.8;
   margin-bottom: 2rem;
@@ -149,24 +149,24 @@ const scrollToContact = () => {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #c9a962, #b8860b);
-  color: #1a1512;
+  background: linear-gradient(135deg, #6b7b8c, #9b8aa5);
+  color: #0d0d0f;
 }
 
 .btn-primary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(201, 169, 98, 0.4);
+  box-shadow: 0 10px 30px rgba(107, 123, 140, 0.4);
 }
 
 .btn-secondary {
   background: transparent;
-  color: #e8d5b7;
-  border: 2px solid #c9a962;
+  color: #e8e8e8;
+  border: 2px solid #6b7b8c;
 }
 
 .btn-secondary:hover {
-  background: #c9a962;
-  color: #1a1512;
+  background: #6b7b8c;
+  color: #0d0d0f;
 }
 
 .hero-visual {
@@ -182,7 +182,7 @@ const scrollToContact = () => {
   height: 400px;
   border-radius: 50%;
   overflow: hidden;
-  box-shadow: 0 20px 60px rgba(108, 92, 231, 0.3);
+  box-shadow: 0 20px 60px rgba(155, 138, 165, 0.3);
   animation: pulse-glow 3s ease-in-out infinite;
 }
 
@@ -193,8 +193,8 @@ const scrollToContact = () => {
 }
 
 @keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 20px 60px rgba(108, 92, 231, 0.3); }
-  50% { box-shadow: 0 20px 80px rgba(108, 92, 231, 0.5); }
+  0%, 100% { box-shadow: 0 20px 60px rgba(155, 138, 165, 0.3); }
+  50% { box-shadow: 0 20px 80px rgba(155, 138, 165, 0.5); }
 }
 
 .scroll-indicator {
@@ -208,7 +208,7 @@ const scrollToContact = () => {
 .scroll-arrow {
   width: 30px;
   height: 50px;
-  border: 2px solid rgba(255, 255, 255, 0.5);
+  border: 2px solid rgba(155, 138, 165, 0.5);
   border-radius: 25px;
   position: relative;
 }
@@ -221,7 +221,7 @@ const scrollToContact = () => {
   transform: translateX(-50%);
   width: 6px;
   height: 6px;
-  background: #e8d5b7;
+  background: #9b8aa5;
   border-radius: 50%;
   animation: scroll-bounce 1.5s ease-in-out infinite;
 }

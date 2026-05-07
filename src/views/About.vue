@@ -10,7 +10,7 @@
     <section class="about-content">
       <div class="content-wrapper">
         <div class="about-image">
-          <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=musician%20artist%20professional%20portrait%20creative%20studio%20lighting&image_size=portrait_4_3" alt="Artist" />
+          <img src="/images/profiles/头像.jpg" alt="Artist" />
         </div>
         
         <div class="about-text">

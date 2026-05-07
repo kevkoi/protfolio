@@ -1,30 +1,30 @@
-$primary-color: #c9a962;
-$secondary-color: #e8d5b7;
-$accent-color: #b8860b;
-$bg-dark: #1a1512;
-$bg-medium: #2d2520;
-$bg-light: #3d352d;
-$text-primary: #f5f0e8;
-$text-secondary: #c4b8a8;
+$primary-color: #6b7b8c;
+$secondary-color: #9b8aa5;
+$accent-color: #8fa3b3;
+$bg-dark: #0d0d0f;
+$bg-medium: #1a1a1f;
+$bg-light: #2a2a32;
+$text-primary: #e8e8e8;
+$text-secondary: #8a8a8f;
 
 @mixin gradient-text {
-  background: linear-gradient(135deg, $primary-color, $secondary-color);
+  background: linear-gradient(135deg, $secondary-color, $accent-color);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 @mixin glass-effect {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.03);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(155, 138, 165, 0.1);
 }
 
 @mixin card-hover {
   transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   &:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 40px rgba(201, 169, 98, 0.2);
+    box-shadow: 0 10px 40px rgba(107, 123, 140, 0.15);
   }
 }
 
@@ -53,17 +53,17 @@ section {
   cursor: pointer;
   
   &-primary {
-    background: linear-gradient(135deg, $primary-color, $accent-color);
+    background: linear-gradient(135deg, $primary-color, $secondary-color);
     color: $bg-dark;
     &:hover {
       transform: translateY(-3px);
-      box-shadow: 0 10px 30px rgba(201, 169, 98, 0.4);
+      box-shadow: 0 10px 30px rgba(107, 123, 140, 0.4);
     }
   }
   
   &-secondary {
     background: transparent;
-    color: $secondary-color;
+    color: $text-primary;
     border: 2px solid $primary-color;
     &:hover {
       background: $primary-color;
@@ -116,10 +116,10 @@ section {
 
 @keyframes pulse-glow {
   0%, 100% {
-    box-shadow: 0 0 20px rgba(201, 169, 98, 0.3);
+    box-shadow: 0 0 20px rgba(155, 138, 165, 0.3);
   }
   50% {
-    box-shadow: 0 0 40px rgba(201, 169, 98, 0.6);
+    box-shadow: 0 0 40px rgba(155, 138, 165, 0.6);
   }
 }
 

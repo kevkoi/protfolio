@@ -38,10 +38,10 @@ import { ref } from 'vue'
 import { Search, X, ChevronLeft, ChevronRight } from 'lucide-vue-next'
 
 const galleryImages = [
-  { src: 'https://cdn.jsdelivr.net/gh/kevkoi/portfolio-assets@v1.0/images/gallery/19A2578.jpg', alt: 'Studio Session', title: 'Studio Session' },
-  { src: 'https://cdn.jsdelivr.net/gh/kevkoi/portfolio-assets@v1.0/images/gallery/B19A2552.jpg', alt: 'Performance', title: 'Live Performance' },
-  { src: 'https://cdn.jsdelivr.net/gh/kevkoi/portfolio-assets@v1.0/images/albums/EP-Cover.png', alt: 'EP Cover', title: 'EP Cover Art' },
-  { src: 'https://cdn.jsdelivr.net/gh/kevkoi/portfolio-assets@v1.0/images/profiles/头像.jpg', alt: 'Portrait', title: 'Portrait' }
+  { src: '/images/gallery/19A2578.jpg', alt: 'Studio Session', title: 'Studio Session' },
+  { src: '/images/gallery/B19A2552.jpg', alt: 'Performance', title: 'Live Performance' },
+  { src: '/images/albums/EP-Cover.png', alt: 'EP Cover', title: 'EP Cover Art' },
+  { src: '/images/profiles/头像.jpg', alt: 'Portrait', title: 'Portrait' }
 ]
 
 const lightboxOpen = ref(false)
@@ -70,7 +70,7 @@ const nextImage = () => {
 <style scoped>
 .gallery-section {
   padding: 6rem 2rem;
-  background: linear-gradient(180deg, #2d2520 0%, #1a1512 100%);
+  background: transparent;
 }
 
 .section-header {
@@ -79,7 +79,7 @@ const nextImage = () => {
 }
 
 .section-label {
-  color: #e8d5b7;
+  color: #9b8aa5;
   font-size: 0.9rem;
   font-weight: 600;
   letter-spacing: 2px;
@@ -93,14 +93,14 @@ const nextImage = () => {
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #c9a962, #e8d5b7);
+  background: linear-gradient(135deg, #9b8aa5, #6b7b8c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .section-description {
-  color: rgba(197, 184, 168, 0.8);
+  color: rgba(138, 138, 143, 0.8);
   margin: 0;
 }
 
@@ -123,7 +123,7 @@ const nextImage = () => {
 
 .gallery-item:hover {
   transform: scale(1.03);
-  box-shadow: 0 10px 40px rgba(201, 169, 98, 0.3);
+  box-shadow: 0 10px 40px rgba(155, 138, 165, 0.3);
 }
 
 .gallery-item img {
@@ -143,7 +143,7 @@ const nextImage = () => {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(201, 169, 98, 0.6);
+  background: rgba(155, 138, 165, 0.6);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -160,12 +160,12 @@ const nextImage = () => {
   width: 40px;
   height: 40px;
   margin-bottom: 0.5rem;
-  color: #1a1512;
+  color: #0d0d0f;
 }
 
 .overlay-text {
   font-weight: 600;
-  color: #1a1512;
+  color: #0d0d0f;
 }
 
 .lightbox {

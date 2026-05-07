@@ -33,7 +33,7 @@ import { Instagram } from 'lucide-vue-next'
 <style scoped>
 .instagram-feed {
   padding: 6rem 2rem;
-  background: linear-gradient(180deg, #3d352d 0%, #1a1512 100%);
+  background: transparent;
 }
 
 .section-header {
@@ -42,7 +42,7 @@ import { Instagram } from 'lucide-vue-next'
 }
 
 .section-label {
-  color: #c9a962;
+  color: #9b8aa5;
   font-size: 0.9rem;
   font-weight: 600;
   letter-spacing: 2px;
@@ -56,7 +56,7 @@ import { Instagram } from 'lucide-vue-next'
 }
 
 .section-description {
-  color: rgba(197, 184, 168, 0.8);
+  color: rgba(138, 138, 143, 0.8);
   margin: 0;
   font-size: 1.1rem;
 }
@@ -65,14 +65,14 @@ import { Instagram } from 'lucide-vue-next'
   max-width: 500px;
   margin: 0 auto;
   padding: 3rem 2rem;
-  background: rgba(45, 37, 32, 0.6);
+  background: rgba(155, 138, 165, 0.06);
   border-radius: 20px;
-  border: 1px solid rgba(201, 169, 98, 0.2);
+  border: 1px solid rgba(155, 138, 165, 0.2);
   backdrop-filter: blur(10px);
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #c9a962, #e8d5b7);
+  background: linear-gradient(135deg, #9b8aa5, #6b7b8c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -84,29 +84,29 @@ import { Instagram } from 'lucide-vue-next'
 }
 
 .instagram-card {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(155, 138, 165, 0.05);
   border-radius: 20px;
   padding: 3rem 2rem;
   text-align: center;
-  border: 1px solid rgba(201, 169, 98, 0.2);
+  border: 1px solid rgba(155, 138, 165, 0.2);
 }
 
 .instagram-icon-large {
   width: 60px;
   height: 60px;
-  color: #c9a962;
+  color: #9b8aa5;
   margin-bottom: 1rem;
 }
 
 .instagram-card h3 {
   font-family: 'Playfair Display', serif;
   font-size: 1.8rem;
-  color: #e8d5b7;
+  color: #e8e8e8;
   margin-bottom: 0.5rem;
 }
 
 .instagram-card p {
-  color: rgba(197, 184, 168, 0.8);
+  color: rgba(138, 138, 143, 0.8);
   margin-bottom: 2rem;
 }
 
@@ -116,7 +116,7 @@ import { Instagram } from 'lucide-vue-next'
 }
 
 .footer-text {
-  color: rgba(197, 184, 168, 0.6);
+  color: rgba(138, 138, 143, 0.6);
   font-style: italic;
 }
 
@@ -134,13 +134,13 @@ import { Instagram } from 'lucide-vue-next'
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #c9a962, #b8860b);
-  color: #1a1512;
+  background: linear-gradient(135deg, #6b7b8c, #9b8aa5);
+  color: #0d0d0f;
 }
 
 .btn-primary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(201, 169, 98, 0.4);
+  box-shadow: 0 10px 30px rgba(107, 123, 140, 0.4);
 }
 
 @media (max-width: 768px) {

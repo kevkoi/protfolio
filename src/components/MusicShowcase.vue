@@ -113,9 +113,9 @@ const progressBarRef = ref(null)
 const isDragging = ref(false)
 
 const tracks = [
-  { id: 1, title: 'If I Could See U Once More', album: 'Summer 2026 EP', duration: '3:42', src: 'https://cdn.jsdelivr.net/gh/kevkoi/portfolio-assets@v1.0/audio/tracks/If I Could See U Once More.mp3', cover: 'https://cdn.jsdelivr.net/gh/kevkoi/portfolio-assets@v1.0/images/albums/EP-Cover.png' },
-  { id: 2, title: 'What Bruises You', album: 'Summer 2026 EP', duration: '4:15', src: 'https://cdn.jsdelivr.net/gh/kevkoi/portfolio-assets@v1.0/audio/tracks/What Bruises you.mp3', cover: 'https://cdn.jsdelivr.net/gh/kevkoi/portfolio-assets@v1.0/images/albums/EP-Cover.png' },
-  { id: 3, title: "Won't Let It Lie", album: 'Summer 2026 EP', duration: '3:58', src: 'https://cdn.jsdelivr.net/gh/kevkoi/portfolio-assets@v1.0/audio/tracks/won_t let it lie.mp3', cover: 'https://cdn.jsdelivr.net/gh/kevkoi/portfolio-assets@v1.0/images/albums/EP-Cover.png' }
+  { id: 1, title: 'If I Could See U Once More', album: 'Summer 2026 EP', duration: '3:42', src: '/audio/tracks/If I Could See U Once More.mp3', cover: '/images/albums/EP-Cover.png' },
+  { id: 2, title: 'What Bruises You', album: 'Summer 2026 EP', duration: '4:15', src: '/audio/tracks/What Bruises you.mp3', cover: '/images/albums/EP-Cover.png' },
+  { id: 3, title: "Won't Let It Lie", album: 'Summer 2026 EP', duration: '3:58', src: '/audio/tracks/won_t let it lie.mp3', cover: '/images/albums/EP-Cover.png' }
 ]
 
 const currentTrack = computed(() => tracks[currentTrackIndex.value])
@@ -288,7 +288,7 @@ onUnmounted(() => {
 <style scoped>
 .music-showcase {
   padding: 6rem 2rem;
-  background: linear-gradient(180deg, #3d352d 0%, #2d2520 100%);
+  background: transparent;
 }
 
 .section-header {
@@ -297,7 +297,7 @@ onUnmounted(() => {
 }
 
 .section-label {
-  color: #e8d5b7;
+  color: #9b8aa5;
   font-size: 0.9rem;
   font-weight: 600;
   letter-spacing: 2px;
@@ -311,7 +311,7 @@ onUnmounted(() => {
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #c9a962, #e8d5b7);
+  background: linear-gradient(135deg, #9b8aa5, #6b7b8c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -329,9 +329,9 @@ onUnmounted(() => {
 }
 
 .player-card {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(155, 138, 165, 0.05);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(155, 138, 165, 0.1);
   border-radius: 20px;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
@@ -359,13 +359,13 @@ onUnmounted(() => {
 
 .track-details h4 {
   margin: 0 0 0.25rem;
-  color: #f5f0e8;
+  color: #e8e8e8;
   font-size: 1.1rem;
 }
 
 .track-details p {
   margin: 0;
-  color: rgba(197, 184, 168, 0.7);
+  color: rgba(138, 138, 143, 0.7);
   font-size: 0.9rem;
 }
 
@@ -403,7 +403,7 @@ onUnmounted(() => {
 .volume-btn {
   background: none;
   border: none;
-  color: rgba(197, 184, 168, 0.6);
+  color: rgba(138, 138, 143, 0.6);
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -413,7 +413,7 @@ onUnmounted(() => {
 }
 
 .volume-btn:hover {
-  color: #c9a962;
+  color: #9b8aa5;
 }
 
 .volume-slider {
@@ -431,7 +431,7 @@ onUnmounted(() => {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: #c9a962;
+  background: #9b8aa5;
   cursor: pointer;
   transition: all 0.2s ease;
 }
@@ -445,8 +445,8 @@ onUnmounted(() => {
   height: 36px;
   border-radius: 50%;
   background: transparent;
-  border: 1px solid rgba(201, 169, 98, 0.4);
-  color: rgba(197, 184, 168, 0.8);
+  border: 1px solid rgba(107, 123, 140, 0.4);
+  color: rgba(138, 138, 143, 0.8);
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -455,8 +455,8 @@ onUnmounted(() => {
 }
 
 .control-btn-small:hover {
-  border-color: #c9a962;
-  color: #c9a962;
+  border-color: #9b8aa5;
+  color: #9b8aa5;
   transform: scale(1.05);
 }
 
@@ -464,9 +464,9 @@ onUnmounted(() => {
   width: 52px;
   height: 52px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #c9a962, #b8860b);
+  background: linear-gradient(135deg, #6b7b8c, #9b8aa5);
   border: none;
-  color: #1a1512;
+  color: #0d0d0f;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -476,7 +476,7 @@ onUnmounted(() => {
 
 .control-btn:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 20px rgba(201, 169, 98, 0.4);
+  box-shadow: 0 4px 20px rgba(107, 123, 140, 0.4);
 }
 
 .progress-section {
@@ -498,7 +498,7 @@ onUnmounted(() => {
 
 .progress {
   height: 100%;
-  background: linear-gradient(90deg, #c9a962, #b8860b);
+  background: linear-gradient(90deg, #6b7b8c, #9b8aa5);
   border-radius: 2px;
   transition: width 0.2s linear;
 }
@@ -511,13 +511,13 @@ onUnmounted(() => {
 
 .time {
   font-size: 0.75rem;
-  color: rgba(197, 184, 168, 0.6);
+  color: rgba(138, 138, 143, 0.6);
 }
 
 .track-list {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(155, 138, 165, 0.05);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(155, 138, 165, 0.1);
   border-radius: 15px;
   overflow: hidden;
 }
@@ -529,7 +529,7 @@ onUnmounted(() => {
   padding: 1rem 1.5rem;
   cursor: pointer;
   transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(155, 138, 165, 0.05);
 }
 
 .track-item:last-child {
@@ -537,40 +537,40 @@ onUnmounted(() => {
 }
 
 .track-item:hover {
-  background: rgba(201, 169, 98, 0.1);
+  background: rgba(155, 138, 165, 0.1);
 }
 
 .track-number {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: rgba(201, 169, 98, 0.2);
+  background: rgba(155, 138, 165, 0.2);
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 0.85rem;
-  color: #e8d5b7;
+  color: #9b8aa5;
 }
 
 .track-item:hover .track-number {
-  background: #c9a962;
-  color: #1a1512;
+  background: #9b8aa5;
+  color: #0d0d0f;
 }
 
 .track-info h5 {
   margin: 0 0 0.2rem;
-  color: #f5f0e8;
+  color: #e8e8e8;
 }
 
 .track-info p {
   margin: 0;
-  color: rgba(197, 184, 168, 0.6);
+  color: rgba(138, 138, 143, 0.6);
   font-size: 0.85rem;
 }
 
 .track-duration {
   margin-left: auto;
-  color: rgba(197, 184, 168, 0.6);
+  color: rgba(138, 138, 143, 0.6);
   font-size: 0.85rem;
 }
 
@@ -594,13 +594,13 @@ onUnmounted(() => {
 
 .btn-secondary {
   background: transparent;
-  color: #e8d5b7;
-  border: 2px solid #c9a962;
+  color: #e8e8e8;
+  border: 2px solid #6b7b8c;
 }
 
 .btn-secondary:hover {
-  background: #c9a962;
-  color: #1a1512;
+  background: #6b7b8c;
+  color: #0d0d0f;
 }
 
 @media (max-width: 900px) {

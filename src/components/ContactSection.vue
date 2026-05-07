@@ -114,7 +114,7 @@ const handleSubmit = async () => {
 <style scoped>
 .contact-section {
   padding: 6rem 2rem;
-  background: #1a1512;
+  background: transparent;
 }
 
 .section-header {
@@ -123,7 +123,7 @@ const handleSubmit = async () => {
 }
 
 .section-label {
-  color: #c9a962;
+  color: #9b8aa5;
   font-size: 0.9rem;
   font-weight: 600;
   letter-spacing: 2px;
@@ -134,11 +134,11 @@ const handleSubmit = async () => {
   font-family: 'Playfair Display', serif;
   font-size: 2.5rem;
   margin: 0.5rem 0;
-  color: #f5f0e8;
+  color: #e8e8e8;
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #c9a962, #e8d5b7);
+  background: linear-gradient(135deg, #9b8aa5, #6b7b8c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -157,10 +157,10 @@ const handleSubmit = async () => {
   align-items: center;
   gap: 1rem;
   padding: 1.25rem 2.5rem;
-  background: rgba(201, 169, 98, 0.15);
-  border: 1px solid rgba(201, 169, 98, 0.3);
+  background: rgba(107, 123, 140, 0.15);
+  border: 1px solid rgba(107, 123, 140, 0.3);
   border-radius: 50px;
-  color: #e8d5b7;
+  color: #e8e8e8;
   text-decoration: none;
   font-size: 1.1rem;
   font-weight: 500;
@@ -168,11 +168,11 @@ const handleSubmit = async () => {
 }
 
 .social-link:hover {
-  background: linear-gradient(135deg, #c9a962, #b8860b);
-  border-color: #c9a962;
-  color: #fff;
+  background: linear-gradient(135deg, #6b7b8c, #9b8aa5);
+  border-color: #6b7b8c;
+  color: #0d0d0f;
   transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(201, 169, 98, 0.3);
+  box-shadow: 0 10px 30px rgba(107, 123, 140, 0.3);
 }
 
 .social-link :deep(svg) {
@@ -194,10 +194,10 @@ const handleSubmit = async () => {
 .contact-form {
   max-width: 600px;
   margin: 3rem auto 0;
-  background: rgba(201, 169, 98, 0.08);
+  background: rgba(155, 138, 165, 0.08);
   padding: 2.5rem;
   border-radius: 20px;
-  border: 1px solid rgba(201, 169, 98, 0.2);
+  border: 1px solid rgba(155, 138, 165, 0.2);
 }
 
 .form-group {
@@ -206,7 +206,7 @@ const handleSubmit = async () => {
 
 .form-group label {
   display: block;
-  color: #c9a962;
+  color: #9b8aa5;
   font-size: 0.9rem;
   font-weight: 600;
   letter-spacing: 1px;
@@ -218,10 +218,10 @@ const handleSubmit = async () => {
 .form-group textarea {
   width: 100%;
   padding: 1rem;
-  background: rgba(26, 21, 18, 0.8);
-  border: 1px solid rgba(201, 169, 98, 0.3);
+  background: rgba(13, 13, 15, 0.8);
+  border: 1px solid rgba(107, 123, 140, 0.3);
   border-radius: 10px;
-  color: #f5f0e8;
+  color: #e8e8e8;
   font-size: 1rem;
   transition: all 0.3s ease;
   box-sizing: border-box;
@@ -230,13 +230,13 @@ const handleSubmit = async () => {
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #c9a962;
-  box-shadow: 0 0 20px rgba(201, 169, 98, 0.2);
+  border-color: #9b8aa5;
+  box-shadow: 0 0 20px rgba(155, 138, 165, 0.2);
 }
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-  color: rgba(232, 213, 183, 0.4);
+  color: rgba(138, 138, 143, 0.4);
 }
 
 .form-group textarea {
@@ -247,10 +247,10 @@ const handleSubmit = async () => {
 .submit-btn {
   width: 100%;
   padding: 1.25rem;
-  background: linear-gradient(135deg, #c9a962, #b8860b);
+  background: linear-gradient(135deg, #6b7b8c, #9b8aa5);
   border: none;
   border-radius: 10px;
-  color: #1a1512;
+  color: #0d0d0f;
   font-size: 1.1rem;
   font-weight: 600;
   cursor: pointer;
@@ -259,7 +259,7 @@ const handleSubmit = async () => {
 
 .submit-btn:hover:not(:disabled) {
   transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(201, 169, 98, 0.4);
+  box-shadow: 0 10px 30px rgba(107, 123, 140, 0.4);
 }
 
 .submit-btn:disabled {

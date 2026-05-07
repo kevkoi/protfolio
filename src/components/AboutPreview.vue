@@ -2,7 +2,7 @@
   <section class="about-preview" id="about-preview">
     <div class="about-content">
       <div class="about-image">
-        <img src="https://cdn.jsdelivr.net/gh/kevkoi/portfolio-assets@v1.0/images/gallery/19A2578.jpg" alt="Amy Ren" />
+        <img src="/images/gallery/19A2578.jpg" alt="Amy Ren" />
         <div class="image-overlay"></div>
       </div>
       
@@ -42,7 +42,7 @@ import { User } from 'lucide-vue-next'
 <style scoped>
 .about-preview {
   padding: 6rem 2rem;
-  background: linear-gradient(180deg, #2d2520 0%, #3d352d 100%);
+  background: transparent;
 }
 
 .about-content {
@@ -58,7 +58,7 @@ import { User } from 'lucide-vue-next'
   position: relative;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
 .about-image img {
@@ -79,11 +79,11 @@ import { User } from 'lucide-vue-next'
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(201, 169, 98, 0.2) 0%, transparent 50%);
+  background: linear-gradient(135deg, rgba(155, 138, 165, 0.2) 0%, transparent 50%);
 }
 
 .section-label {
-  color: #c9a962;
+  color: #9b8aa5;
   font-size: 0.9rem;
   font-weight: 600;
   letter-spacing: 2px;
@@ -97,14 +97,14 @@ import { User } from 'lucide-vue-next'
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #c9a962, #e8d5b7);
+  background: linear-gradient(135deg, #9b8aa5, #6b7b8c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .about-description {
-  color: rgba(197, 184, 168, 0.7);
+  color: rgba(138, 138, 143, 0.7);
   line-height: 1.8;
   margin-bottom: 1rem;
 }
@@ -123,14 +123,14 @@ import { User } from 'lucide-vue-next'
   display: block;
   font-size: 2rem;
   font-weight: 700;
-  background: linear-gradient(135deg, #c9a962, #e8d5b7);
+  background: linear-gradient(135deg, #9b8aa5, #6b7b8c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .stat-label {
-  color: rgba(197, 184, 168, 0.6);
+  color: rgba(138, 138, 143, 0.6);
   font-size: 0.9rem;
 }
 
@@ -148,13 +148,13 @@ import { User } from 'lucide-vue-next'
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #c9a962, #b8860b);
-  color: #1a1512;
+  background: linear-gradient(135deg, #6b7b8c, #9b8aa5);
+  color: #0d0d0f;
 }
 
 .btn-primary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(201, 169, 98, 0.4);
+  box-shadow: 0 10px 30px rgba(107, 123, 140, 0.4);
 }
 
 @media (max-width: 900px) {

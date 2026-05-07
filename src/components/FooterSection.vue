@@ -40,8 +40,20 @@ import { Instagram } from 'lucide-vue-next'
 
 <style scoped>
 .footer {
-  padding: 3rem 2rem 1.5rem;
-  background: #1a1512;
+  padding: 3rem 2rem 4rem;
+  background: transparent;
+  position: relative;
+}
+
+.footer::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 120px;
+  background: linear-gradient(180deg, transparent 0%, rgba(3,3,5,0.5) 100%);
+  pointer-events: none;
 }
 
 .footer-content {
@@ -67,7 +79,7 @@ import { Instagram } from 'lucide-vue-next'
 
 .logo-icon {
   font-size: 1.6rem;
-  background: linear-gradient(135deg, #c9a962, #e8d5b7);
+  background: linear-gradient(135deg, #9b8aa5, #6b7b8c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -77,14 +89,14 @@ import { Instagram } from 'lucide-vue-next'
   font-family: 'Playfair Display', serif;
   font-size: 1.4rem;
   font-weight: 600;
-  background: linear-gradient(135deg, #f5f0e8, #e8d5b7);
+  background: linear-gradient(135deg, #e8e8e8, #9b8aa5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .footer-description {
-  color: rgba(197, 184, 168, 0.6);
+  color: rgba(138, 138, 143, 0.6);
   font-size: 0.9rem;
   margin-bottom: 1rem;
 }
@@ -99,22 +111,22 @@ import { Instagram } from 'lucide-vue-next'
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: rgba(201, 169, 98, 0.15);
+  background: rgba(107, 123, 140, 0.15);
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #e8d5b7;
+  color: #e8e8e8;
   transition: all 0.3s ease;
 }
 
 .social-link:hover {
-  background: linear-gradient(135deg, #c9a962, #b8860b);
-  color: #fff;
+  background: linear-gradient(135deg, #6b7b8c, #9b8aa5);
+  color: #0d0d0f;
   transform: translateY(-2px);
 }
 
 .footer-section h3 {
-  color: #f5f0e8;
+  color: #e8e8e8;
   margin-bottom: 0.75rem;
   font-family: 'Playfair Display', serif;
   font-size: 1.1rem;
@@ -130,22 +142,22 @@ import { Instagram } from 'lucide-vue-next'
 }
 
 .footer-links a {
-  color: rgba(197, 184, 168, 0.6);
+  color: rgba(138, 138, 143, 0.6);
   text-decoration: none;
   font-size: 0.9rem;
   transition: color 0.3s ease;
 }
 
 .footer-links a:hover {
-  color: #c9a962;
+  color: #9b8aa5;
 }
 
 .footer-bottom {
   text-align: center;
   padding-top: 1.5rem;
   margin-top: 1.5rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  color: rgba(197, 184, 168, 0.5);
+  border-top: 1px solid rgba(155, 138, 165, 0.08);
+  color: rgba(138, 138, 143, 0.5);
   font-size: 0.85rem;
 }
 </style>

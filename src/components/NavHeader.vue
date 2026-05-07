@@ -75,9 +75,9 @@ onUnmounted(() => {
 }
 
 .navbar-scrolled {
-  background: rgba(26, 21, 18, 0.95);
+  background: rgba(13, 13, 15, 0.95);
   backdrop-filter: blur(10px);
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
 }
 
 .nav-container {
@@ -99,7 +99,7 @@ onUnmounted(() => {
 
 .logo-icon {
   font-size: 1.8rem;
-  background: linear-gradient(135deg, #c9a962, #e8d5b7);
+  background: linear-gradient(135deg, #9b8aa5, #6b7b8c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -115,7 +115,7 @@ onUnmounted(() => {
   font-family: 'Playfair Display', serif;
   font-size: 1.5rem;
   font-weight: 600;
-  background: linear-gradient(135deg, #f5f0e8, #c9a962);
+  background: linear-gradient(135deg, #e8e8e8, #9b8aa5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -128,7 +128,7 @@ onUnmounted(() => {
 }
 
 .nav-link {
-  color: rgba(197, 184, 168, 0.85);
+  color: rgba(138, 138, 143, 0.85);
   text-decoration: none;
   font-weight: 500;
   font-size: 0.95rem;
@@ -144,12 +144,12 @@ onUnmounted(() => {
   left: 0;
   width: 0;
   height: 2px;
-  background: linear-gradient(90deg, #c9a962, #e8d5b7);
+  background: linear-gradient(90deg, #6b7b8c, #9b8aa5);
   transition: width 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .nav-link:hover {
-  color: #f5f0e8;
+  color: #e8e8e8;
 }
 
 .nav-link:hover::after {
@@ -191,7 +191,7 @@ onUnmounted(() => {
     left: -100%;
     width: 100%;
     height: calc(100vh - 70px);
-    background: rgba(26, 21, 18, 0.98);
+    background: rgba(13, 13, 15, 0.98);
     backdrop-filter: blur(10px);
     flex-direction: column;
     justify-content: flex-start;
